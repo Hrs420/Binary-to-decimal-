@@ -1,0 +1,34 @@
+ // ALL RIGHTS RESERVED FOR HARSH KUMAR WHO CREATED THIS PROGRAM !
+ //THIS PROGRAM CONVERTS DECIMAL TO BINARY
+  
+ #include <stdio.h>
+
+ 
+void hrs(int n)
+{
+    
+    int num[32];
+  
+    
+    int i = 0;
+    while (n > 0) {
+        
+        num[i] = n % 2;
+        n = n / 2;
+        i++;
+    }
+  
+    
+    for (int j = i - 1; j >= 0; j--)
+        printf("%d", num[j]);
+}
+  
+
+int main()
+{
+    int n ;
+	printf("Enter a number");
+	scanf("%d",&n);
+    hrs(n);
+    return 0;
+}
